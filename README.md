@@ -2,7 +2,7 @@
 
 Exporting monit dashboard data in Grafanas's SimpleJSON compatible format.
 
-*This is an alpha software*
+**This is an alpha software**
 
 ## Motivation
 
@@ -15,7 +15,7 @@ to export data from multiple monit dashboards to Grafana via SimpleJSON plugin.
 
 ## Quick start
 
-For checking out how it works please refer to this [deployment example](https://github.com/monit-grafana-example).
+For checking out how it works please refer to this [deployment example](https://github.com/demetrio108/monit-grafana-example).
 
 ## Running
 
@@ -42,7 +42,7 @@ In configuration file you have to provide list of monit instances to export from
    interval: 30
  ```
 
- `name` is user as root context fro Grafana datasource.
+ `name` is used as root context fro Grafana datasource.
 
 ### Grafana setup
 
