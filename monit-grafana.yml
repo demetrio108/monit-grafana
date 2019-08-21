@@ -1,0 +1,4 @@
+---
+- name: monit_test
+  url: http://admin:monit@monit-host:2812/
+  interval: 30
