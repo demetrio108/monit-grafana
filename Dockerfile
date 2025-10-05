@@ -1,4 +1,4 @@
-FROM golang:1.12-alpine as builder
+FROM golang:1.20-alpine as builder
 
 MAINTAINER demetrio108 <demetrio108@protonmail.com>
 
@@ -7,7 +7,7 @@ RUN apk add --no-cache --update alpine-sdk git make
 
 COPY . /go/src/github.com/demetrio108/monit-grafana
 WORKDIR /go/src/github.com/demetrio108/monit-grafana
-RUN go get
+RUN go mod tidy
 RUN CGO_ENABLED=0 go build -a -installsuffix cgo -ldflags '-s -w -extldflags "-static"' .
 RUN mkdir -p rootfs/etc && \
     cp monit-grafana rootfs/ && \

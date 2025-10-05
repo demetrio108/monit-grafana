@@ -17,6 +17,13 @@ to export data from multiple monit dashboards to Grafana via SimpleJSON plugin.
 
 For checking out how it works please refer to this [deployment example](https://github.com/demetrio108/monit-grafana-example).
 
+## Build using docker
+```
+make        # binary
+make rpm    # rpm package
+make deb    # deb package
+```
+
 ## Running
 
 You can build monit-grafana from source, or run as docker containerized version:
